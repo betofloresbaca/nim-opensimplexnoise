@@ -49,4 +49,4 @@ For more information about the way all the OpenSimplexNoise methods work visit t
 * [C# implementation](https://gist.github.com/KdotJPG/f271080228b55056e6da70c73eb3e9b1)
 * [Original Java Implementation](https://gist.github.com/KdotJPG/b1270127455a94ac5d19)
 
-Thanks Kurt Spencer for developing this awesome algorithm
+Thanks Kurt Spencer for developing this awesome algorithm.
