@@ -6,18 +6,14 @@ This implementation ports the C# implementation by KdotJPG without changing the 
 
 ## Instalation
 
-Pending to upload to the nim package repository.
+```bash
+nimble install opensimplexnoise
+```
 
 ## Usage
 
 ```nim
 import opensimplexnoise
-
-#[
-    Inits some fields needed for all noise instances
-    Warning! This is not thread safe, WIP
-]#
-initNoise()
 
 #[
     You can also provide a (seed : int64) parameter. Example:
