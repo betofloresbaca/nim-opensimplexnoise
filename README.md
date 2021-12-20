@@ -19,7 +19,7 @@ import opensimplexnoise
     You can also provide a (seed : int64) parameter. Example:
     var noise = newOpenSimplex(141228)
 ]#
-var noise = newOpenSimplex()
+var noise: OpenSimplex = newOpenSimplex()
 
 echo noise.evaluate(0.01, 0.02) # 2D noise
 echo noise.evaluate(0.01, 0.02, 0.03) # 3D noise

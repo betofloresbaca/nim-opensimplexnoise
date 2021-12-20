@@ -20,7 +20,7 @@ proc newOpenSimplex*(seed: int64): OpenSimplex =
     source[i] = i.int16
   {.push overflowChecks: off.}
   for i in countdown(PSIZE-1, 0):
-    vSeed = vSeed * 6364136223846793005 + 1442695040888963407
+    vSeed = vSeed * VSEED_PARAM_1 + VSEED_PARAM_2
     var r = (int)((vSeed + 31) mod (i + 1))
     if r < 0:
       r += (i + 1)

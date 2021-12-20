@@ -9,7 +9,7 @@ test "evaluate(x, y) produces expected noise":
   var testSuite = parseJson(readFile(joinPath(suiteDir, "xy.json")))
   for seedTest in testSuite:
     var seed = seedTest["seed"].getInt
-    var noise = newOpenSimplex(seed)
+    var noise: OpenSimplex = newOpenSimplex(seed)
     for tCase in seedTest["cases"]:
       var x = tCase[0].getFloat
       var y = tCase[1].getFloat
@@ -20,7 +20,7 @@ test "evaluate(x, y, z) produces expected noise":
   var testSuite = parseJson(readFile(joinPath(suiteDir, "xyz.json")))
   for seedTest in testSuite:
     var seed = seedTest["seed"].getInt
-    var noise = newOpenSimplex(seed)
+    var noise: OpenSimplex = newOpenSimplex(seed)
     for tCase in seedTest["cases"]:
       var x = tCase[0].getFloat
       var y = tCase[1].getFloat
@@ -32,7 +32,7 @@ test "evaluate3XYBeforeZ(x, y, z) produces expected noise":
   var testSuite = parseJson(readFile(joinPath(suiteDir, "xy_z.json")))
   for seedTest in testSuite:
     var seed = seedTest["seed"].getInt
-    var noise = newOpenSimplex(seed)
+    var noise: OpenSimplex = newOpenSimplex(seed)
     for tCase in seedTest["cases"]:
       var x = tCase[0].getFloat
       var y = tCase[1].getFloat
@@ -44,7 +44,7 @@ test "evaluate3XZBeforeY(x, y, z) produces expected noise":
   var testSuite = parseJson(readFile(joinPath(suiteDir, "xz_y.json")))
   for seedTest in testSuite:
     var seed = seedTest["seed"].getInt
-    var noise = newOpenSimplex(seed)
+    var noise: OpenSimplex = newOpenSimplex(seed)
     for tCase in seedTest["cases"]:
       var x = tCase[0].getFloat
       var y = tCase[1].getFloat
@@ -56,7 +56,7 @@ test "evaluate(x, y, z, w) produces expected noise":
   var testSuite = parseJson(readFile(joinPath(suiteDir, "xyzw.json")))
   for seedTest in testSuite:
     var seed = seedTest["seed"].getInt
-    var noise = newOpenSimplex(seed)
+    var noise: OpenSimplex = newOpenSimplex(seed)
     for tCase in seedTest["cases"]:
       var x = tCase[0].getFloat
       var y = tCase[1].getFloat
